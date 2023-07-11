@@ -8,7 +8,7 @@ secret_key = "3L0f667GIAar7SsA0qHWTPpwvYmXM4mwJwKyklBc"
 resource "aws_instance" "one" {
   ami             = "ami-03c7d01cf4dedc891"
   instance_type   = "t2.micro"
-  key_name        = "rahamnewkp01"
+  key_name        = "terraform"
   vpc_security_group_ids = [aws_security_group.five.id]
   availability_zone = "us-east-1a"
   user_data       = <<EOF
